@@ -1,1 +1,73 @@
-<p>header works!</p>
+<div class="header">
+  <div class="top-bar">
+    <div class="top-bar-content">
+      <div class="links-container">
+        <div class="link-container">
+          <a
+            class="link"
+            href="https://www.gibson.com/en-US/garage"
+            target="_blank"
+            >GIBSON GARAGE</a
+          >
+        </div>
+        <div class="link-container">
+          <a
+            class="link"
+            href="https://www.gibson.com/en-US/Find-A-Store"
+            target="_blank"
+            >FIND A DEALER</a
+          >
+        </div>
+        <div class="link-container">
+          <a
+            class="link"
+            href="https://www.gibson.com/en-US/gibson-app"
+            target="_blank"
+            >GIBSON APP</a
+          >
+        </div>
+      </div>
+
+      <div class="language-select-container">
+        <button
+          mat-button
+          class="language-select-btn"
+          [matMenuTriggerFor]="languageMenu"
+        >
+          <div class="language-select-btn-content">
+            <img
+              class="language-flag"
+              src="/assets/images/flags/usa-flag.svg"
+            />
+            <span class="language-title">UNITED STATES</span>
+            <fa-icon [icon]="faChevronDown"></fa-icon>
+          </div>
+        </button>
+
+        <mat-menu
+          class="language-select-menu"
+          #languageMenu="matMenu"
+          yPosition="below"
+        >
+          <ng-template matMenuContent>
+            @for (language of languageOptions; track $index) {
+            <button mat-menu-item class="menu-option">
+              <div class="menu-option-content">
+                <img
+                  class="language-flag"
+                  [src]="'/assets/images/flags/' + language.image"
+                />
+                <div class="language-title">
+                  {{ language.title | uppercase }}
+                </div>
+              </div>
+            </button>
+            }
+          </ng-template>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-bar"></div>
+</div>

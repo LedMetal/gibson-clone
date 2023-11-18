@@ -1,0 +1,99 @@
+@import "../../../shared/colors.scss";
+
+::ng-deep {
+  .mat-mdc-menu-content {
+    padding: 0 !important;
+  }
+
+  .language-select-menu {
+    width: 117.17px;
+
+    .menu-option {
+      background-color: $black;
+      height: 24px;
+      min-height: 0;
+      padding: 0;
+
+      &:hover {
+        .menu-option-content {
+          .language-title {
+            color: $black;
+          }
+        }
+      }
+
+      .menu-option-content {
+        align-items: center;
+        display: flex;
+
+        .language-flag {
+          height: 14px;
+          padding: 0 0.5rem;
+          width: 20px;
+        }
+
+        .language-title {
+          color: $white;
+          font-family: "RobotoCondensed";
+          font-size: 11.6px;
+          letter-spacing: normal;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  .top-bar {
+    align-items: center;
+    background-color: $black;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+
+    .top-bar-content {
+      align-items: center;
+      display: flex;
+      justify-content: flex-end;
+      width: 1280px;
+
+      .links-container {
+        display: flex;
+
+        .link-container {
+          border-right: 1px solid $paynesGray;
+          padding: 0 10px;
+
+          .link {
+            color: $white;
+            font-family: "RobotoCondensed";
+            font-size: 11.6px;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .language-select-container {
+        .language-select-btn {
+          height: auto;
+
+          .language-select-btn-content {
+            align-items: center;
+            color: $white;
+            display: flex;
+            font-family: "RobotoCondensed";
+            font-size: 11.6px;
+            gap: 0.25rem;
+            justify-content: space-between;
+            letter-spacing: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-bar {
+    background-color: $nero;
+    height: 85px;
+  }
+}
