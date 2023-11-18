@@ -69,5 +69,183 @@
     </div>
   </div>
 
-  <div class="nav-bar"></div>
+  <div class="nav-bar">
+    <div class="nav-bar-content">
+      <div class="left-section">
+        <div class="home-link-container">
+          <a class="home-link" [routerLink]="['/']">
+            <img src="/assets/images/logos/gibson-header-logo.svg" />
+          </a>
+        </div>
+
+        <div class="nav-menu-section">
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #electricMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="electricMenu"
+              (mouseenter)="toggleMenu(electricMenuTrigger)"
+            >
+              ELECTRIC
+            </button>
+
+            <mat-menu
+              class="electric-menu"
+              #electricMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #acousticMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="acousticMenu"
+              (mouseenter)="toggleMenu(acousticMenuTrigger)"
+            >
+              ACOUSTIC
+            </button>
+
+            <mat-menu
+              class="acoustic-menu"
+              #acousticMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #bassMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="bassMenu"
+              (mouseenter)="toggleMenu(bassMenuTrigger)"
+            >
+              BASS
+            </button>
+
+            <mat-menu
+              class="bass-menu"
+              #bassMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #accessoriesMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="accessoriesMenu"
+              (mouseenter)="toggleMenu(accessoriesMenuTrigger)"
+            >
+              GUITAR ACCESSORIES
+            </button>
+
+            <mat-menu
+              class="accessories-menu"
+              #accessoriesMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #lifestyleMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="lifestyleMenu"
+              (mouseenter)="toggleMenu(lifestyleMenuTrigger)"
+            >
+              LIFESTYLE
+            </button>
+
+            <mat-menu
+              class="lifestyle-menu"
+              #lifestyleMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #serviceMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="serviceMenu"
+              (mouseenter)="toggleMenu(serviceMenuTrigger)"
+            >
+              SERVICE
+            </button>
+
+            <mat-menu
+              class="service-menu"
+              #serviceMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+
+          <div class="nav-link">
+            <button
+              class="nav-link-btn"
+              mat-button
+              #mediaMenuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="mediaMenu"
+              (mouseenter)="toggleMenu(mediaMenuTrigger)"
+            >
+              MEDIA
+            </button>
+
+            <mat-menu
+              class="media-menu"
+              #mediaMenu="matMenu"
+              xPosition="after"
+              yPosition="below"
+            >
+              <button mat-menu-item>Item 1</button>
+              <button mat-menu-item>Item 2</button>
+            </mat-menu>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="cart-container">
+          <a class="cart-link" [routerLink]="['/']"
+            ><fa-icon
+              class="cart-icon"
+              [icon]="faCartShopping"
+              size="xl"
+            ></fa-icon
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

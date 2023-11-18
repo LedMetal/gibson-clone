@@ -41,6 +41,56 @@
       }
     }
   }
+
+  .mat-mdc-menu-panel {
+    max-width: none !important;
+  }
+
+  .electric-menu,
+  .acoustic-menu,
+  .bass-menu,
+  .accessories-menu,
+  .lifestyle-menu,
+  .service-menu,
+  .media-menu {
+    position: relative;
+    top: 24px;
+  }
+
+  .electric-menu {
+    right: 185px;
+    width: 270px;
+  }
+
+  .acoustic-menu {
+    right: 291px;
+    width: 380px;
+  }
+
+  .bass-menu {
+    right: 401px;
+    width: 460px;
+  }
+
+  .accessories-menu {
+    right: 481px;
+    width: 660px;
+  }
+
+  .lifestyle-menu {
+    right: 680px;
+    width: 770px;
+  }
+
+  .service-menu {
+    right: 793px;
+    width: 870px;
+  }
+
+  .media-menu {
+    right: 889px;
+    width: 950px;
+  }
 }
 
 .header {
@@ -93,7 +143,58 @@
   }
 
   .nav-bar {
+    align-items: center;
     background-color: $nero;
+    display: flex;
     height: 85px;
+    justify-content: center;
+
+    .nav-bar-content {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 1280px;
+
+      .left-section {
+        display: flex;
+        gap: 56px;
+
+        .home-link-container {
+          .home-link {
+            box-shadow: 0 0 10px 0 $nero;
+            display: flex;
+          }
+        }
+
+        .nav-menu-section {
+          align-items: center;
+          display: flex;
+          gap: 1rem;
+
+          .nav-link {
+            .nav-link-btn {
+              color: $white;
+              font-family: "RobotoCondensed";
+              font-size: 16px;
+              font-weight: bold;
+              z-index: 1080;
+            }
+          }
+        }
+      }
+
+      .right-section {
+        .cart-container {
+          .cart-link {
+            color: $white;
+
+            .cart-icon {
+              height: 24px;
+              width: 24px;
+            }
+          }
+        }
+      }
+    }
   }
 }
