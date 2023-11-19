@@ -1,0 +1,120 @@
+[
+  {
+    "navTitle": "ELECTRIC",
+    "menuItems": [
+      {
+        "itemTitle": "Featured",
+        "subMenuType": "subMenu",
+        "menuItems": [
+          {
+            "itemTitle": "New Arrivals",
+            "itemLink": "https://www.gibson.com/Collection/electric-new-arrivals"
+          },
+          {
+            "itemTitle": "Faded Series",
+            "itemLink": "https://www.gibson.com/Collection/faded-collection"
+          },
+          {
+            "itemTitle": "Left-Handed Guitars",
+            "itemLink": "https://www.gibson.com/collection/left-handed-electric"
+          },
+          {
+            "itemTitle": "Under $2,500",
+            "itemLink": "https://www.gibson.com/Collection/under-2500"
+          },
+          {
+            "itemTitle": "Custom Color Series",
+            "itemLink": "https://www.gibson.com/Collection/custom-color"
+          },
+          {
+            "itemTitle": "Holiday Gift Guide",
+            "itemLink": "https://www.gibson.com/gift-guide"
+          }
+        ]
+      },
+      {
+        "itemTitle": "By Body Style",
+        "subMenuType": "subMenu",
+        "menuItems": [
+          {
+            "itemTitle": "Les Paul",
+            "subMenuType": "guitarImage",
+            "guitarImage": "/assets/images/body-types/body-style-electric-les-paul.svg"
+          },
+          {
+            "itemTitle": "SG",
+            "subMenuType": "guitarImage",
+            "guitarImage": "/assets/images/body-types/body-style-electric-SG.svg"
+          },
+          {
+            "itemTitle": "ES",
+            "subMenuType": "guitarImage",
+            "guitarImage": "/assets/images/body-types/body-style-electric-ES.svg"
+          },
+          {
+            "itemTitle": "Explorer",
+            "subMenuType": "guitarImage",
+            "guitarImage": "/assets/images/body-types/body-style-electric-explorer.svg"
+          },
+          {
+            "itemTitle": "Firebird",
+            "subMenuType": "guitarImage",
+            "guitarImage": "/assets/images/body-types/body-style-electric-firebird.svg"
+          },
+          {
+            "itemTitle": "Flying V",
+            "subMenuType": "guitarImage",
+            "guitarImage": "/assets/images/body-types/body-style-electric-flying-v.svg"
+          },
+          {
+            "itemTitle": "SHOP ALL",
+            "itemLink": "https://www.gibson.com/Collection/electric"
+          }
+        ]
+      },
+      {
+        "itemTitle": "By Collection",
+        "subMenuType": "subMenu",
+        "menuItems": [
+          {
+            "itemTitle": "Original",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-collection-original",
+              "text": "Faithful tributes to another Golden Era. With this line of beloved classics, we bring back the instruments that have shaped sounds across generations and genres of music.",
+              "title": "THE ORIGINAL COLLECTION"
+            }
+          },
+          {
+            "itemTitle": "Modern",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-collection-modern",
+              "text": "We never stop inventing. Building on a solid legacy through continuous innovation, we added lighter-weight bodies, asymmetrical SlimTaper necks, and other advanced features.",
+              "title": "THE MODERN COLLECTION"
+            }
+          },
+          {
+            "itemTitle": "Artist",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-collection-artist",
+              "text": "Gibson USA has produced many signature models for the Artist Collection, including guitars created in collaboration with Slash, Dave Mustaine, Lzzy Hale, Kirk Douglas, and Tony Iommi.",
+              "title": "THE ARTIST COLLECTION"
+            }
+          },
+          {
+            "itemTitle": "Mod™ Collection",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-collection-mod",
+              "text": "Rarities. Exclusives. Customized One-off and Pre-played Guitar MODs. Expand your Personal Collection with Unique Features, Builds and Colors that can only be found at Gibson.com",
+              "title": "MOD™ COLLECTION"
+            }
+          }
+        ]
+      }
+    ],
+    "additionalClassNames": ["electric-menu"]
+  }
+]
