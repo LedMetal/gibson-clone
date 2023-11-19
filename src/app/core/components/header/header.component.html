@@ -79,159 +79,111 @@
         </div>
 
         <div class="nav-menu-section">
+          @for (navItem of navConfig; track $index) {
           <div class="nav-link">
             <button
-              class="nav-link-btn"
+              class="nav-link-trigger"
               mat-button
-              #electricMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="electricMenu"
-              (mouseenter)="toggleMenu(electricMenuTrigger)"
+              #menuTrigger="matMenuTrigger"
+              [matMenuTriggerFor]="navItemMenu"
+              (mouseenter)="toggleMenu(menuTrigger)"
             >
-              ELECTRIC
+              {{ navItem.navTitle }}
             </button>
 
             <mat-menu
-              class="electric-menu"
-              #electricMenu="matMenu"
+              [class]="
+                'nav-item-menu ' +
+                navItem.additionalClassNames?.toString()?.split(',')?.join(' ')
+              "
+              #navItemMenu="matMenu"
               xPosition="after"
               yPosition="below"
             >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
+              <ng-template matMenuContent>
+                <div
+                  class="menu-items-list-container"
+                  *ngFor="let menuItemsList of navItem.menuItemsLists"
+                >
+                  <div class="list-title">{{ menuItemsList.listTitle }}</div>
+
+                  <div class="menu-items-list">
+                    <div
+                      class="menu-item"
+                      *ngFor="let menuItem of menuItemsList.menuItems"
+                    >
+                      <a
+                        *ngIf="menuItem.itemLink; else withSubMenu"
+                        class="menu-item-link"
+                        [href]="menuItem.itemLink"
+                        mat-menu-item
+                        >{{ menuItem.itemTitle }}</a
+                      >
+
+                      <ng-template #withSubMenu>
+                        <button
+                          class="menu-item-btn"
+                          [ngClass]="{
+                            'sub-menu-trigger':
+                              menuItem.subMenuType === SubMenuType.subMenu
+                          }"
+                          mat-menu-item
+                          [matMenuTriggerFor]="subMenu"
+                        >
+                          {{ menuItem.itemTitle }}
+                        </button>
+
+                        <mat-menu
+                          class="sub-menu"
+                          [class]="navItem.navTitle | lowercase"
+                          #subMenu="matMenu"
+                        >
+                          <ng-template matMenuContent>
+                            <div class="sub-menu-items-container">
+                              <div class="list-title">
+                                {{ menuItem.itemTitle | uppercase }}
+                              </div>
+
+                              <div class="sub-menu-items-list">
+                                <div
+                                  class="sub-menu-item"
+                                  *ngFor="
+                                    let subMenuItem of menuItem.subMenuItems
+                                  "
+                                >
+                                  <a
+                                    *ngIf="
+                                      subMenuItem.itemLink;
+                                      else withSubMenu
+                                    "
+                                    class="sub-menu-item-link"
+                                    [ngClass]="subMenuItem.additionalClassNames"
+                                    [href]="subMenuItem.itemLink"
+                                    mat-menu-item
+                                    >{{ subMenuItem.itemTitle }}</a
+                                  >
+
+                                  <ng-template #withSubMenu>
+                                    <button
+                                      class="sub-menu-item-btn"
+                                      mat-menu-item
+                                    >
+                                      {{ subMenuItem.itemTitle }}
+                                    </button>
+                                  </ng-template>
+                                </div>
+                              </div>
+                            </div>
+                          </ng-template>
+                        </mat-menu>
+                      </ng-template>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
             </mat-menu>
           </div>
-
-          <div class="nav-link">
-            <button
-              class="nav-link-btn"
-              mat-button
-              #acousticMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="acousticMenu"
-              (mouseenter)="toggleMenu(acousticMenuTrigger)"
-            >
-              ACOUSTIC
-            </button>
-
-            <mat-menu
-              class="acoustic-menu"
-              #acousticMenu="matMenu"
-              xPosition="after"
-              yPosition="below"
-            >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
-          </div>
-
-          <div class="nav-link">
-            <button
-              class="nav-link-btn"
-              mat-button
-              #bassMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="bassMenu"
-              (mouseenter)="toggleMenu(bassMenuTrigger)"
-            >
-              BASS
-            </button>
-
-            <mat-menu
-              class="bass-menu"
-              #bassMenu="matMenu"
-              xPosition="after"
-              yPosition="below"
-            >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
-          </div>
-
-          <div class="nav-link">
-            <button
-              class="nav-link-btn"
-              mat-button
-              #accessoriesMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="accessoriesMenu"
-              (mouseenter)="toggleMenu(accessoriesMenuTrigger)"
-            >
-              GUITAR ACCESSORIES
-            </button>
-
-            <mat-menu
-              class="accessories-menu"
-              #accessoriesMenu="matMenu"
-              xPosition="after"
-              yPosition="below"
-            >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
-          </div>
-
-          <div class="nav-link">
-            <button
-              class="nav-link-btn"
-              mat-button
-              #lifestyleMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="lifestyleMenu"
-              (mouseenter)="toggleMenu(lifestyleMenuTrigger)"
-            >
-              LIFESTYLE
-            </button>
-
-            <mat-menu
-              class="lifestyle-menu"
-              #lifestyleMenu="matMenu"
-              xPosition="after"
-              yPosition="below"
-            >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
-          </div>
-
-          <div class="nav-link">
-            <button
-              class="nav-link-btn"
-              mat-button
-              #serviceMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="serviceMenu"
-              (mouseenter)="toggleMenu(serviceMenuTrigger)"
-            >
-              SERVICE
-            </button>
-
-            <mat-menu
-              class="service-menu"
-              #serviceMenu="matMenu"
-              xPosition="after"
-              yPosition="below"
-            >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
-          </div>
-
-          <div class="nav-link">
-            <button
-              class="nav-link-btn"
-              mat-button
-              #mediaMenuTrigger="matMenuTrigger"
-              [matMenuTriggerFor]="mediaMenu"
-              (mouseenter)="toggleMenu(mediaMenuTrigger)"
-            >
-              MEDIA
-            </button>
-
-            <mat-menu
-              class="media-menu"
-              #mediaMenu="matMenu"
-              xPosition="after"
-              yPosition="below"
-            >
-              <button mat-menu-item>Item 1</button>
-              <button mat-menu-item>Item 2</button>
-            </mat-menu>
-          </div>
+          }
         </div>
       </div>
 

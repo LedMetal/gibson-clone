@@ -1,8 +1,26 @@
 @import "../../../shared/colors.scss";
 
 ::ng-deep {
+  /* ---------- Angular Material Overwrite ---------- */
+  .mat-mdc-menu-content,
+  .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    font-family: "RobotoCondensed" !important;
+    font-weight: unset !important;
+    letter-spacing: normal !important;
+  }
+
   .mat-mdc-menu-content {
     padding: 0 !important;
+  }
+
+  .mat-mdc-menu-panel {
+    border-radius: 0 !important;
+    max-width: none !important;
+  }
+
+  // hide chevron
+  .mat-mdc-menu-submenu-icon {
+    display: none;
   }
 
   .language-select-menu {
@@ -42,10 +60,7 @@
     }
   }
 
-  .mat-mdc-menu-panel {
-    max-width: none !important;
-  }
-
+  .nav-item-menu,
   .electric-menu,
   .acoustic-menu,
   .bass-menu,
@@ -57,39 +72,89 @@
     top: 24px;
   }
 
-  .electric-menu {
-    right: 185px;
-    width: 270px;
+  .nav-item-menu {
+    padding: 12px 16px;
+
+    &.electric-menu {
+      right: 185px;
+    }
+
+    .menu-items-list-container {
+      .list-title {
+        border-bottom: 2px solid;
+        font-size: 1.25rem;
+        font-weight: 700;
+        padding: 0 16px 8px 0;
+      }
+
+      .menu-items-list {
+        margin-top: 8px;
+      }
+
+      .menu-item-link,
+      .menu-item-btn {
+        background-color: transparent !important;
+        height: 32px;
+        min-height: unset;
+      }
+
+      .menu-item-btn {
+        &.sub-menu-trigger {
+          &:hover {
+            background-color: $shadow !important;
+            color: $white;
+          }
+        }
+      }
+    }
   }
 
-  .acoustic-menu {
-    right: 291px;
-    width: 380px;
-  }
+  .sub-menu {
+    box-shadow: none !important;
+    padding: 12px 16px;
+    position: fixed;
+    top: 125px;
 
-  .bass-menu {
-    right: 401px;
-    width: 460px;
-  }
+    &.electric {
+      transform: translateX(1rem) !important;
+    }
 
-  .accessories-menu {
-    right: 481px;
-    width: 660px;
-  }
+    .list-title {
+      border-bottom: 2px solid;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 0 16px 8px 0;
+    }
 
-  .lifestyle-menu {
-    right: 680px;
-    width: 770px;
-  }
+    .sub-menu-items-list {
+      margin-top: 8px;
 
-  .service-menu {
-    right: 793px;
-    width: 870px;
-  }
+      .sub-menu-item-link,
+      .sub-menu-item-btn {
+        background-color: transparent !important;
+        height: 32px;
+        min-height: unset;
 
-  .media-menu {
-    right: 889px;
-    width: 950px;
+        &.link-highlight {
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+
+      .sub-menu-item-link {
+        &:hover {
+          color: $shadow;
+          text-decoration: underline;
+        }
+      }
+
+      .sub-menu-item-btn {
+        &:hover {
+          color: $shadow;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
 
@@ -172,7 +237,7 @@
           gap: 1rem;
 
           .nav-link {
-            .nav-link-btn {
+            .nav-link-trigger {
               color: $white;
               font-family: "RobotoCondensed";
               font-size: 16px;

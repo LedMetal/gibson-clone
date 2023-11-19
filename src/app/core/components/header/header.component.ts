@@ -6,6 +6,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { RouterModule } from '@angular/router';
+import { TLanguageOption } from '../../../shared/types/language-option';
+import { TNavConfig } from '../../../shared/types/nav-config';
+import { NavbarServiceService } from '../../../data/services/navbar-service.service';
+import { OnInit } from '@angular/core';
+import { LanguageServiceService } from '../../../data/services/language-service.service';
+import { SubMenuType } from '../../../shared/enums/sub-menu-type';
 
 @Component({
   selector: 'app-header',
@@ -20,26 +26,30 @@ import { RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   @ViewChildren(MatMenuTrigger) triggers: QueryList<MatMenuTrigger> | null =
     null;
 
+  SubMenuType = SubMenuType;
   faChevronDown = faChevronDown;
   faCartShopping = faCartShopping;
+  languageOptions: TLanguageOption[] = [];
+  navConfig: TNavConfig[] = [];
 
-  languageOptions: TLanguageOption[] = [
-    { title: 'United States', image: 'usa-flag.svg' },
-    { title: 'Belgie Be', image: 'belgium-flag.jfif' },
-    { title: 'Belgique Fr', image: 'belgium-flag.jfif' },
-    { title: 'Deutschland', image: 'germany-flag.png' },
-    { title: 'Espana', image: 'spanish-flag.png' },
-    { title: 'France', image: 'france-flag.png' },
-    { title: 'Ireland', image: 'ireland-flag.jpg' },
-    { title: 'Italia', image: 'italy-flag.png' },
-    { title: 'Nederland', image: 'nederlands-flag.png' },
-    { title: 'Osterreich', image: 'austria-flag.jpg' },
-    { title: 'UK', image: 'uk-flag.png' },
-  ];
+  constructor(
+    private languageService: LanguageServiceService,
+    private navbarService: NavbarServiceService
+  ) {}
+
+  ngOnInit(): void {
+    this.navbarService.getNavConfig().subscribe((data) => {
+      this.navConfig = data;
+    });
+
+    this.languageService.getLanguageOptions().subscribe((data) => {
+      this.languageOptions = data;
+    });
+  }
 
   toggleMenu(trigger: MatMenuTrigger): void {
     this.triggers?.forEach((trigger: MatMenuTrigger) => trigger.closeMenu());
@@ -47,8 +57,3 @@ export class HeaderComponent {
     trigger.openMenu();
   }
 }
-
-type TLanguageOption = {
-  title: string;
-  image: string;
-};
