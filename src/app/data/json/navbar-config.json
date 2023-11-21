@@ -854,5 +854,32 @@
         ]
       }
     ]
+  },
+  {
+    "navTitle": "MEDIA",
+    "additionalClassNames": ["media-menu"],
+    "menuItemsLists": [
+      {
+        "listTitle": "GIBSON MEDIA",
+        "menuItems": [
+          {
+            "itemTitle": "Gibson TV",
+            "itemLink": "https://www.gibson.com/GibsonTV"
+          },
+          {
+            "itemTitle": "Records",
+            "itemLink": "https://www.gibson.com/Gibson-Records"
+          },
+          {
+            "itemTitle": "Books",
+            "itemLink": "https://www.gibson.com/slashbook"
+          },
+          {
+            "itemTitle": "Gibson Blog",
+            "itemLink": "https://www.gibson.com/Blog"
+          }
+        ]
+      }
+    ]
   }
 ]
