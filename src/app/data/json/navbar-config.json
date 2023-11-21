@@ -1,6 +1,7 @@
 [
   {
     "navTitle": "ELECTRIC",
+    "additionalClassNames": ["electric-menu"],
     "menuItemsLists": [
       {
         "listTitle": "ELECTRIC GUITARS",
@@ -263,7 +264,595 @@
           }
         ]
       }
-    ],
-    "additionalClassNames": ["electric-menu"]
+    ]
+  },
+  {
+    "navTitle": "ACOUSTIC",
+    "additionalClassNames": ["acoustic-menu"],
+    "menuItemsLists": [
+      {
+        "listTitle": "ACOUSTIC GUITARS",
+        "menuItems": [
+          {
+            "itemTitle": "Featured",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "itemTitle": "New Arrivals",
+                "itemLink": "https://www.gibson.com/Collection/acoustic-new-arrivals"
+              },
+              {
+                "itemTitle": "Ready to Shop",
+                "itemLink": "https://www.gibson.com/Collection/ready-to-shop-acoustic"
+              },
+              {
+                "itemTitle": "Murphy Lab",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-muphy.jpg",
+                  "link": "https://www.gibson.com/collection/the-gibson-murphy-lab-acoustic",
+                  "text": "Vintage tone and feel, redefined. Our exclusive Murphy Lab lacquer and thermally-aged tops enhance resonance and tone while our Light Aging treatment provides the played-in feel and look of a vintage guitar with softened edges throughout.",
+                  "title": "CUSTOM SHOP MURPHY LAB"
+                }
+              }
+            ]
+          },
+          {
+            "itemTitle": "By Body Style",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "itemTitle": "Small Body",
+                "itemLink": "https://www.gibson.com/Collection/small-body",
+                "subMenuType": "guitarImage",
+                "guitarImage": "/assets/images/body-types/body-style-acoustic-small-body-no-lines.svg"
+              },
+              {
+                "itemTitle": "Round Shoulder",
+                "itemLink": "https://www.gibson.com/Collection/round-shoulder",
+                "subMenuType": "guitarImage",
+                "guitarImage": "/assets/images/body-types/body-style-acoustic-round-shoulder-no-lines.svg"
+              },
+              {
+                "itemTitle": "Square Shoulder",
+                "itemLink": "https://www.gibson.com/Collection/square-shoulder",
+                "subMenuType": "guitarImage",
+                "guitarImage": "/assets/images/body-types/body-style-acoustic-square-shoulder-no-lines.svg"
+              },
+              {
+                "itemTitle": "Jumbo & Super Jumbo",
+                "itemLink": "https://www.gibson.com/Collection/super-jumbo",
+                "subMenuType": "guitarImage",
+                "guitarImage": "/assets/images/body-types/body-style-acoustic-jumbo-body-no-lines.svg"
+              },
+              {
+                "itemTitle": "SHOP ALL",
+                "itemLink": "https://www.gibson.com/Collection/acoustic",
+                "additionalClassNames": ["link-highlight"]
+              }
+            ]
+          },
+          {
+            "itemTitle": "By Collection",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "itemTitle": "Original",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-original.jpg",
+                  "link": "https://www.gibson.com/Collection/original-acoustic",
+                  "text": "Newly built with a classical look and feel. Though most models feature built-in pickups ready for a stage or studio, the coloration and details evoke the golden acoustic age of the 50s and 60s.",
+                  "title": "THE ORIGINAL COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Modern",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-modern.jpg",
+                  "link": "https://www.gibson.com/Collection/modern-acoustic",
+                  "text": "Tuned to versatility and playability. These contemporary interpretations of classic models feature popular updates such as slimmer necks, new woods, friendlier fingerboards, and cutaways.",
+                  "title": "THE MODERN COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Artist",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-artist.jpg",
+                  "link": "https://www.gibson.com/Collection/artist-acoustic",
+                  "text": "Gibson Acoustic produces signature models for the Artist Collection, including the cherry red Orianthi SJ-200, the Noel Gallagher J-150, and the Nathaniel Rateliff LG-2 Western.",
+                  "title": "THE ARTIST COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Generation",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-generation-menu.jpg",
+                  "link": "https://www.gibson.com/generation",
+                  "text": "Hear more of you. The Generation Collection series of acoustic guitars feature the exlusive Gibson Player Port™, providing a truly unique and immersive sonic experience.",
+                  "title": "THE GENERATION COLLECTION"
+                }
+              }
+            ]
+          },
+          {
+            "itemTitle": "Custom Shop",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "itemTitle": "Historic Collection",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-custom-shop-historic.jpg",
+                  "link": "https://www.gibson.com/Collection/acoustic-custom-shop-historic",
+                  "text": "Time travel with our vintage icons. We went back to the year that made each model famous. True in specifications, dimensions, and materials, and artfully aged for a rich patina and tone.",
+                  "title": "CUSTOM SHOP HISTORIC COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Modern Collection",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-custom-shop-modern.jpg",
+                  "link": "https://www.gibson.com/Collection/acoustic-custom-shop-modern",
+                  "text": "Rare treasures from our master luthiers. The artisans who craft our acoustic guitars in Bozeman, Montana, put their skill and creativity into highly ornamented features and beautifications.",
+                  "title": "CUSTOM SHOP MODERN COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Murphy Lab",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/acoustic-collection-custom-shop-murphy.jpg",
+                  "link": "https://www.gibson.com/Collection/the-gibson-murphy-lab-acoustic",
+                  "text": "Vintage tone and feel, redefined. Our exclusive Murphy Lab lacquer and thermally-aged tops enhance resonance and tone while our Light Aging treatment provides the played-in feel and look of a vintage guitar with softened edges throughout.",
+                  "title": "CUSTOM SHOP MURPHY LAB"
+                }
+              }
+            ]
+          },
+          {
+            "itemTitle": "Exclusive Colors",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/acoustic-exclusives.jpg",
+              "link": "https://www.gibson.com/Collection/acoustic-exclusives",
+              "text": "Unique builds and color options for acoustic guitars that stand out from the crowd. You won't find these Exclusive acoustic guitars available anywhere else.",
+              "title": "GIBSON EXCLUSIVE ACOUSTIC GUITARS"
+            }
+          },
+          {
+            "itemTitle": "Mandolin",
+            "itemLink": "https://www.gibson.com/page/madolin"
+          },
+          {
+            "itemTitle": "SHOP ALL ACOUSTIC",
+            "itemLink": "https://www.gibson.com/Collection/acoustic",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ],
+        "bonusItems": [
+          {
+            "itemTitle": "Acoustic Amps",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/acoustic-amps.jpg",
+              "link": "https://www.gibson.com/rosette-300",
+              "text": "The MESA/Boogie® Rosette line is a dedicated acoustic instrument amplifier designed not just for acoustic guitars, but also for mandolin, ukulele, violin/fiddle, dulcimer, cello, upright bass and other acoustic instruments.",
+              "title": "MESA BOOGIE ACOUSTIC AMPS"
+            }
+          },
+          {
+            "itemTitle": "Acoustic Pedals",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/acoustic-pedals.jpg",
+              "link": "https://www.mesaboogie.com/en-US/Amp/FP.DIROSE/FP.DIROSE",
+              "text": "The MESA/Boogie® line of acoustic pedals and preamps are designed to bring out every nuance and expressive tone of your acoustic instrument. Stand out and be heard!",
+              "title": "MESA BOOGIE ACOUSTIC PEDALS"
+            }
+          },
+          {
+            "itemTitle": "Epiphone Inspired by Gibson",
+            "itemLink": "https://www.epiphone.com/en-US/Collection/inspired-by-gibson-acoustic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "navTitle": "BASS",
+    "additionalClassNames": ["bass-menu"],
+    "menuItemsLists": [
+      {
+        "listTitle": "BASS GUITARS",
+        "menuItems": [
+          {
+            "itemTitle": "By Body Style",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "guitarImage": "/assets/images/body-types/body-style-bass-thunderbird.svg",
+                "itemLink": "https://www.gibson.com/Collection/bass-thunderbird",
+                "itemTitle": "Thunderbird",
+                "subMenuType": "guitarImage"
+              },
+              {
+                "guitarImage": "/assets/images/body-types/body-style-bass-les-paul-special.svg",
+                "itemLink": "https://www.gibson.com/Collection/bass-les-paul",
+                "itemTitle": "Les Paul",
+                "subMenuType": "guitarImage"
+              },
+              {
+                "guitarImage": "/assets/images/body-types/body-style-bass-SG.svg",
+                "itemLink": "https://www.gibson.com/Collection/bass-sg",
+                "itemTitle": "SG",
+                "subMenuType": "guitarImage"
+              },
+              {
+                "itemTitle": "SHOP ALL",
+                "itemLink": "https://www.gibson.com/Collection/bass",
+                "additionalClassNames": ["link-highlight"]
+              }
+            ]
+          },
+          {
+            "itemTitle": "By Collection",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "itemTitle": "Original",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/bass-original.jpg",
+                  "link": "https://www.gibson.com/Collection/bass-original",
+                  "text": "Unique in style, character, and tonality, the Gibson Original line of bass guitars are made to rock hard and bring the thunder.",
+                  "title": "THE ORIGINAL COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Modern",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/bass-modern.jpg",
+                  "link": "https://www.gibson.com/Collection/bass-modern",
+                  "text": "Designed to meet the musical needs of modern bassists who want to make their own path and steadfastly refuse to follow the crowd.",
+                  "title": "THE MODERN COLLECTION"
+                }
+              },
+              {
+                "itemTitle": "Artist",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/bass-artist.jpg",
+                  "link": "https://www.gibson.com/Collection/bass-artist",
+                  "text": "Gibson USA continues to innovate with signature series bass guitars designed in collaboration with artists like Gene Simmons, Rex Brown, and more.",
+                  "title": "THE ARTIST COLLECTION"
+                }
+              }
+            ]
+          },
+          {
+            "itemTitle": "SHOP ALL BASS",
+            "itemLink": "https://www.gibson.com/Collection/Bass",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ],
+        "bonusItems": [
+          {
+            "itemTitle": "Bass Amps",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/bass-amps.jpg",
+              "link": "https://www.mesaboogie.com/Collection/bass-amplifiers",
+              "text": "Discover Class D bass amps done the Mesa® way. Incredibly small and lightweight, these ultra-portable amps pack a powerful punch.",
+              "title": "MESA BOOGIE BASS AMPLIFIERS"
+            }
+          },
+          {
+            "itemTitle": "Bass Pedals",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/bass-pedals.jpg",
+              "link": "https://www.mesaboogie.com/en-US/Collection/tone-tools",
+              "text": "Explore our most compact Grab ‘N Go bass solutions. All the tone-shaping tools you need in a small, convenient, and portable package.",
+              "title": "MESA BOOGIE BASS PEDALS"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "navTitle": "GUITAR ACCESSORIES",
+    "additionalClassNames": ["accessories-menu"],
+    "menuItemsLists": [
+      {
+        "listTitle": "PARTS",
+        "menuItems": [
+          {
+            "itemTitle": "Bridges",
+            "itemLink": "https://www.gibson.com/Collection/bridges"
+          },
+          {
+            "itemTitle": "Covers",
+            "itemLink": "https://www.gibson.com/Collection/covers"
+          },
+          {
+            "itemTitle": "Knobs",
+            "itemLink": "https://www.gibson.com/Collection/knobs"
+          },
+          {
+            "itemTitle": "Mounting",
+            "itemLink": "https://www.gibson.com/Collection/mounting"
+          },
+          {
+            "itemTitle": "Pickguards",
+            "itemLink": "https://www.gibson.com/Collection/pickguards"
+          },
+          {
+            "itemTitle": "Pickups",
+            "itemLink": "https://www.gibson.com/pickupshop"
+          },
+          {
+            "itemTitle": "Potentiometers",
+            "itemLink": "https://www.gibson.com/Collection/potentiometers"
+          },
+          {
+            "itemTitle": "Strap Buttons",
+            "itemLink": "https://www.gibson.com/Collection/strap-buttons"
+          },
+          {
+            "itemTitle": "Switches",
+            "itemLink": "https://www.gibson.com/Collection/switches"
+          },
+          {
+            "itemTitle": "Tailpieces",
+            "itemLink": "https://www.gibson.com/Collection/tailpieces"
+          },
+          {
+            "itemTitle": "Tuning Machines",
+            "itemLink": "https://www.gibson.com/Collection/tuning"
+          },
+          {
+            "itemTitle": "ALL PARTS",
+            "itemLink": "https://www.gibson.com/Collection/hardware",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ]
+      },
+      {
+        "listTitle": "ACCESSORIES",
+        "menuItems": [
+          {
+            "itemTitle": "Cables",
+            "itemLink": "https://www.gibson.com/Collection/instrument-cables"
+          },
+          {
+            "itemTitle": "Capos",
+            "itemLink": "https://www.gibson.com/Collection/capos"
+          },
+          {
+            "itemTitle": "Cases",
+            "itemLink": "https://www.gibson.com/Collection/cases"
+          },
+          {
+            "itemTitle": "Cleaning & Care",
+            "itemLink": "https://www.gibson.com/Collection/cleaning-and-care"
+          },
+          {
+            "itemTitle": "Picks",
+            "itemLink": "https://www.gibson.com/Collection/picks"
+          },
+          {
+            "itemTitle": "Soundhole Covers",
+            "itemLink": "https://www.gibson.com/Collection/soundhole-covers"
+          },
+          {
+            "itemTitle": "Stands",
+            "itemLink": "https://www.gibson.com/Collection/stands"
+          },
+          {
+            "itemTitle": "Straps",
+            "itemLink": "https://www.gibson.com/Collection/straps"
+          },
+          {
+            "itemTitle": "Tuners",
+            "itemLink": "https://www.gibson.com/Collection/tuners"
+          },
+          {
+            "itemTitle": "ALL ACCESSORIES",
+            "itemLink": "https://www.gibson.com/Collection/accessories",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ]
+      },
+      {
+        "listTitle": "STRINGS",
+        "menuItems": [
+          {
+            "itemTitle": "Electric",
+            "itemLink": "https://www.gibson.com/Collection/electric-strings"
+          },
+          {
+            "itemTitle": "Acoustic",
+            "itemLink": "https://www.gibson.com/Collection/acoustic-strings"
+          },
+          {
+            "itemTitle": "Bass",
+            "itemLink": "https://www.gibson.com/Collection/bass-strings"
+          },
+          {
+            "itemTitle": "ALL STRINGS",
+            "itemLink": "https://www.gibson.com/Collection/strings",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "navTitle": "LIFESTYLE",
+    "additionalClassNames": ["lifestyle-menu"],
+    "menuItemsLists": [
+      {
+        "listTitle": "APPAREL",
+        "menuItems": [
+          {
+            "itemTitle": "Shirts & Tops",
+            "itemLink": "https://www.gibson.com/Collection/shirts-and-tops"
+          },
+          {
+            "itemTitle": "Sweatshirts & Outerwear",
+            "itemLink": "https://www.gibson.com/Collection/sweatshirts-and-outerwear"
+          },
+          {
+            "itemTitle": "Artist Collection",
+            "itemLink": "https://www.gibson.com/Collection/artist-collection-apparel"
+          },
+          {
+            "itemTitle": "Collaborations",
+            "itemLink": "https://www.gibson.com/Collection/collaborations"
+          },
+          {
+            "itemTitle": "Hats & Headwear",
+            "itemLink": "https://www.gibson.com/Collection/headwear"
+          },
+          {
+            "itemTitle": "ALL APPAREL",
+            "itemLink": "https://www.gibson.com/Collection/apparel",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ]
+      },
+      {
+        "listTitle": "LIFESTYLE ACCESSORIES",
+        "menuItems": [
+          {
+            "itemTitle": "Keychains",
+            "itemLink": "https://www.gibson.com/Collection/keychains"
+          },
+          {
+            "itemTitle": "Phone Cases",
+            "itemLink": "https://www.gibson.com/Collection/phone-cases"
+          },
+          {
+            "itemTitle": "Pins, Patches & Stickers",
+            "itemLink": "https://www.gibson.com/Collection/pins-patches-and-stickers"
+          },
+          {
+            "itemTitle": "Lifton Leather Goods",
+            "itemLink": "https://www.gibson.com/lifton"
+          },
+          {
+            "itemTitle": "ALL LIFESTYLE ACCESSORIES",
+            "itemLink": "https://www.gibson.com/Collection/keychains",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ]
+      },
+      {
+        "listTitle": "HOME & OFFICE",
+        "menuItems": [
+          {
+            "itemTitle": "Books",
+            "itemLink": "https://www.gibson.com/slashbook"
+          },
+          {
+            "itemTitle": "Mini Guitars",
+            "itemLink": "https://www.gibson.com/Collection/mini-guitars"
+          },
+          {
+            "itemTitle": "Collectibles",
+            "itemLink": "https://www.gibson.com/Collection/collectibles"
+          },
+          {
+            "itemTitle": "Books",
+            "itemLink": "https://www.gibson.com/Collection/posters-and-signage"
+          },
+          {
+            "itemTitle": "Seating & Stools",
+            "itemLink": "https://www.gibson.com/Collection/seating-and-stools"
+          },
+          {
+            "itemTitle": "ALL HOME & OFFICE",
+            "itemLink": "https://www.gibson.com/Collection/home-office-and-studio",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "navTitle": "SERVICE",
+    "additionalClassNames": ["service-menu"],
+    "menuItemsLists": [
+      {
+        "listTitle": "SERVICING TOOLS",
+        "menuItems": [
+          {
+            "itemTitle": "Warranty & Registration",
+            "itemLink": "https://www.gibson.com/page/warranty-registration"
+          },
+          {
+            "itemTitle": "Virtual Guitar Tech",
+            "itemLink": "https://www.gibson.com/Support/Virtual-Guitar-Tech"
+          },
+          {
+            "itemTitle": "Frequently Asked Questions",
+            "itemLink": "https://www.gibson.com/Support/FAQ"
+          }
+        ]
+      },
+      {
+        "listTitle": "SHOPPING TOOLS",
+        "menuItems": [
+          {
+            "itemTitle": "Find a Dealer Near You",
+            "itemLink": "https://www.gibson.com/Find-A-Store"
+          },
+          {
+            "itemTitle": "Online Retailers",
+            "itemLink": "https://www.gibson.com/Online-Dealers"
+          },
+          {
+            "itemTitle": "Shipping Policies",
+            "itemLink": "https://www.gibson.com/Policy/StorePolicy"
+          },
+          {
+            "itemTitle": "Return Policies",
+            "itemLink": "https://www.gibson.com/Policy/StorePolicy"
+          }
+        ]
+      },
+      {
+        "listTitle": "SUPPORT TOOLS",
+        "menuItems": [
+          {
+            "itemTitle": "Serial Number Info",
+            "itemLink": "https://www.gibson.com/Support/Serial-Number-Search"
+          },
+          {
+            "itemTitle": "Report Fakes and Scams",
+            "itemLink": "https://forms.monday.com/forms/41eba6904d716fc521b809bbc64d5816?r=use1"
+          },
+          {
+            "itemTitle": "Legacy Product Archive",
+            "itemLink": "https://legacy.gibson.com"
+          },
+          {
+            "itemTitle": "Contact Us",
+            "itemLink": "https://www.gibson.com/Support/Contact-Us"
+          },
+          {
+            "itemTitle": "About Us",
+            "itemLink": "https://www.gibson.com/About-Us"
+          }
+        ]
+      }
+    ]
   }
 ]
