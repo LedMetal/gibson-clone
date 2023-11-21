@@ -1,27 +1,29 @@
-# GibsonClone
+# [GibsonClone](https://gibson.abdulsadiq.com/) (LIVE)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+## [LIVE](https://gibson.abdulsadiq.com/) (Work in Progress)
 
-## Development server
+## Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This WIP project is a frontend clone of the [official Gibson USA website](https://www.gibson.com/en-US).
 
-## Code scaffolding
+Please remember this is a work in progress. I will keep the live site updated with the latest changes in this repository. I'll slowly construct this clone bit by bit, as long as the beauitful guitars don't distract me too much!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development
 
-## Build
+This is app is built with Angular v.17.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project is a great chance to practice creating an app with the new standalone components structure. Also, I expect I will try using some of the new @ template directives introduced in this version, as well.
 
-## Running unit tests
+I used Gibson's website as a mockup, much like I would get from a UI/UX designer in a professional setting, and have been attempting to replicate every aspect of it from header to footer.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+While a lot of the pages have a fairly simple layout, there are still several challenges that I expect to encounter. Specifically speaking, I expect the navigation bar in the header to be a little tricky. However, I expect the combination of Angular Material Menus and some CSS magic will do the trick!
 
-## Running end-to-end tests
+I will try to limit how many third party libraries I use, in an effort to flex my ability to implement a design from scratch.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Built With
 
-## Further help
+_Programming Language:_ **Angular**, **Typescript**, **SCSS**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+
+[Abdul Sadiq](https://github.com/LedMetal)
