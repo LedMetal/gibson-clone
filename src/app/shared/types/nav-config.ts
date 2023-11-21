@@ -4,12 +4,13 @@ export type TNavConfig = {
   additionalClassNames?: string[];
 };
 
-type TMenuItemsList = {
+export type TMenuItemsList = {
   listTitle: string;
   menuItems: TMenuItem[];
+  bonusItems?: TMenuItem[];
 };
 
-type TMenuItem = {
+export type TMenuItem = {
   itemTitle: string;
   itemLink?: string;
   subMenuType?: string;
@@ -19,8 +20,9 @@ type TMenuItem = {
   subMenuItems?: TMenuItem[];
 };
 
-type TInfoPanelConfig = {
+export type TInfoPanelConfig = {
   image: string;
   text: string;
   title: string;
+  link: string;
 };

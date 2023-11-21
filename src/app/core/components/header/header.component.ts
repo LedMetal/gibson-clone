@@ -7,7 +7,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { RouterModule } from '@angular/router';
 import { TLanguageOption } from '../../../shared/types/language-option';
-import { TNavConfig } from '../../../shared/types/nav-config';
+import { TMenuItem, TNavConfig } from '../../../shared/types/nav-config';
 import { NavbarServiceService } from '../../../data/services/navbar-service.service';
 import { OnInit } from '@angular/core';
 import { LanguageServiceService } from '../../../data/services/language-service.service';
@@ -30,6 +30,7 @@ export class HeaderComponent implements OnInit {
   @ViewChildren(MatMenuTrigger) triggers: QueryList<MatMenuTrigger> | null =
     null;
 
+  window = window;
   SubMenuType = SubMenuType;
   faChevronDown = faChevronDown;
   faCartShopping = faCartShopping;

@@ -115,6 +115,8 @@
                       <a
                         *ngIf="menuItem.itemLink; else withSubMenu"
                         class="menu-item-link"
+                        [ngClass]="menuItem.additionalClassNames"
+                        target="_blank"
                         [href]="menuItem.itemLink"
                         mat-menu-item
                         >{{ menuItem.itemTitle }}</a
@@ -129,6 +131,13 @@
                           }"
                           mat-menu-item
                           [matMenuTriggerFor]="subMenu"
+                          (click)="
+                            menuItem.subMenuType === SubMenuType.infoPanel &&
+                              window.open(
+                                menuItem.infoPanelConfig?.link,
+                                '_blank'
+                              )
+                          "
                         >
                           {{ menuItem.itemTitle }}
                         </button>
@@ -139,7 +148,35 @@
                           #subMenu="matMenu"
                         >
                           <ng-template matMenuContent>
-                            <div class="sub-menu-items-container">
+                            <div
+                              class="sub-menu-info-panel"
+                              *ngIf="
+                                menuItem.subMenuType === SubMenuType.infoPanel
+                              "
+                            >
+                              <a
+                                [href]="menuItem.infoPanelConfig?.link"
+                                target="_blank"
+                              >
+                                <img
+                                  class="info-panel-image"
+                                  [src]="menuItem.infoPanelConfig?.image"
+                                />
+                              </a>
+                              <div class="info-panel-title">
+                                {{ menuItem.infoPanelConfig?.title }}
+                              </div>
+                              <div class="info-panel-text">
+                                {{ menuItem.infoPanelConfig?.text }}
+                              </div>
+                            </div>
+
+                            <div
+                              class="sub-menu-items-container"
+                              *ngIf="
+                                menuItem.subMenuType === SubMenuType.subMenu
+                              "
+                            >
                               <div class="list-title">
                                 {{ menuItem.itemTitle | uppercase }}
                               </div>
@@ -153,10 +190,13 @@
                                 >
                                   <a
                                     *ngIf="
-                                      subMenuItem.itemLink;
+                                      subMenuItem.itemLink &&
+                                        subMenuItem.subMenuType !==
+                                          SubMenuType.guitarImage;
                                       else withSubMenu
                                     "
                                     class="sub-menu-item-link"
+                                    target="_blank"
                                     [ngClass]="subMenuItem.additionalClassNames"
                                     [href]="subMenuItem.itemLink"
                                     mat-menu-item
@@ -167,9 +207,77 @@
                                     <button
                                       class="sub-menu-item-btn"
                                       mat-menu-item
+                                      [matMenuTriggerFor]="subMenu"
+                                      (click)="
+                                        subMenuItem.subMenuType ===
+                                          SubMenuType.guitarImage &&
+                                          window.open(
+                                            subMenuItem.itemLink,
+                                            '_blank'
+                                          )
+                                      "
                                     >
                                       {{ subMenuItem.itemTitle }}
                                     </button>
+
+                                    <mat-menu
+                                      class="sub-menu"
+                                      [class]="navItem.navTitle | lowercase"
+                                      #subMenu="matMenu"
+                                    >
+                                      <ng-template matMenuContent>
+                                        <div
+                                          class="sub-menu-guitar-image"
+                                          *ngIf="
+                                            subMenuItem.subMenuType ===
+                                            SubMenuType.guitarImage
+                                          "
+                                        >
+                                          <a
+                                            [href]="subMenuItem.itemLink"
+                                            target="_blank"
+                                          >
+                                            <img
+                                              class="guitar-image"
+                                              [src]="subMenuItem.guitarImage"
+                                            />
+                                          </a>
+                                        </div>
+
+                                        <div
+                                          class="sub-menu-info-panel"
+                                          *ngIf="
+                                            subMenuItem.subMenuType ===
+                                            SubMenuType.infoPanel
+                                          "
+                                        >
+                                          <a
+                                            [href]="
+                                              subMenuItem.infoPanelConfig?.link
+                                            "
+                                            target="_blank"
+                                          >
+                                            <img
+                                              class="info-panel-image"
+                                              [src]="
+                                                subMenuItem.infoPanelConfig
+                                                  ?.image
+                                              "
+                                            />
+                                          </a>
+                                          <div class="info-panel-title">
+                                            {{
+                                              subMenuItem.infoPanelConfig?.title
+                                            }}
+                                          </div>
+                                          <div class="info-panel-text">
+                                            {{
+                                              subMenuItem.infoPanelConfig?.text
+                                            }}
+                                          </div>
+                                        </div>
+                                      </ng-template>
+                                    </mat-menu>
                                   </ng-template>
                                 </div>
                               </div>
@@ -177,6 +285,167 @@
                           </ng-template>
                         </mat-menu>
                       </ng-template>
+                    </div>
+
+                    <div
+                      class="bonus-items-container"
+                      *ngIf="menuItemsList.bonusItems"
+                    >
+                      <ng-container
+                        *ngFor="let bonusItem of menuItemsList.bonusItems"
+                      >
+                        <a
+                          *ngIf="bonusItem.itemLink; else withSubMenu"
+                          class="menu-item-link"
+                          [ngClass]="bonusItem.additionalClassNames"
+                          target="_blank"
+                          [href]="bonusItem.itemLink"
+                          mat-menu-item
+                          >{{ bonusItem.itemTitle }}</a
+                        >
+
+                        <ng-template #withSubMenu>
+                          <button
+                            class="menu-item-btn"
+                            [ngClass]="{
+                              'sub-menu-trigger':
+                                bonusItem.subMenuType === SubMenuType.subMenu
+                            }"
+                            mat-menu-item
+                            [matMenuTriggerFor]="subMenu"
+                            (click)="
+                              bonusItem.subMenuType === SubMenuType.infoPanel &&
+                                window.open(
+                                  bonusItem.infoPanelConfig?.link,
+                                  '_blank'
+                                )
+                            "
+                          >
+                            {{ bonusItem.itemTitle }}
+                          </button>
+
+                          <mat-menu
+                            class="sub-menu"
+                            [class]="navItem.navTitle | lowercase"
+                            #subMenu="matMenu"
+                          >
+                            <ng-template matMenuContent>
+                              <div
+                                class="sub-menu-info-panel"
+                                *ngIf="
+                                  bonusItem.subMenuType ===
+                                  SubMenuType.infoPanel
+                                "
+                              >
+                                <a
+                                  [href]="bonusItem.infoPanelConfig?.link"
+                                  target="_blank"
+                                >
+                                  <img
+                                    class="info-panel-image"
+                                    [src]="bonusItem.infoPanelConfig?.image"
+                                  />
+                                </a>
+                                <div class="info-panel-title">
+                                  {{ bonusItem.infoPanelConfig?.title }}
+                                </div>
+                                <div class="info-panel-text">
+                                  {{ bonusItem.infoPanelConfig?.text }}
+                                </div>
+                              </div>
+
+                              <div
+                                class="sub-menu-items-container"
+                                *ngIf="
+                                  bonusItem.subMenuType === SubMenuType.subMenu
+                                "
+                              >
+                                <div class="list-title">
+                                  {{ bonusItem.itemTitle | uppercase }}
+                                </div>
+
+                                <div class="sub-menu-items-list">
+                                  <div
+                                    class="sub-menu-item"
+                                    *ngFor="
+                                      let subMenuItem of bonusItem.subMenuItems
+                                    "
+                                  >
+                                    <a
+                                      *ngIf="
+                                        subMenuItem.itemLink;
+                                        else withSubMenu
+                                      "
+                                      class="sub-menu-item-link"
+                                      target="_blank"
+                                      [ngClass]="
+                                        subMenuItem.additionalClassNames
+                                      "
+                                      [href]="subMenuItem.itemLink"
+                                      mat-menu-item
+                                      >{{ subMenuItem.itemTitle }}</a
+                                    >
+
+                                    <ng-template #withSubMenu>
+                                      <button
+                                        class="sub-menu-item-btn"
+                                        mat-menu-item
+                                        [matMenuTriggerFor]="subMenu"
+                                      >
+                                        {{ subMenuItem.itemTitle }}
+                                      </button>
+
+                                      <mat-menu
+                                        class="sub-menu"
+                                        [class]="navItem.navTitle | lowercase"
+                                        #subMenu="matMenu"
+                                      >
+                                        <ng-template matMenuContent>
+                                          <div
+                                            class="sub-menu-info-panel"
+                                            *ngIf="
+                                              subMenuItem.subMenuType ===
+                                              SubMenuType.infoPanel
+                                            "
+                                          >
+                                            <a
+                                              [href]="
+                                                subMenuItem.infoPanelConfig
+                                                  ?.link
+                                              "
+                                              target="_blank"
+                                            >
+                                              <img
+                                                class="info-panel-image"
+                                                [src]="
+                                                  subMenuItem.infoPanelConfig
+                                                    ?.image
+                                                "
+                                              />
+                                            </a>
+                                            <div class="info-panel-title">
+                                              {{
+                                                subMenuItem.infoPanelConfig
+                                                  ?.title
+                                              }}
+                                            </div>
+                                            <div class="info-panel-text">
+                                              {{
+                                                subMenuItem.infoPanelConfig
+                                                  ?.text
+                                              }}
+                                            </div>
+                                          </div>
+                                        </ng-template>
+                                      </mat-menu>
+                                    </ng-template>
+                                  </div>
+                                </div>
+                              </div>
+                            </ng-template>
+                          </mat-menu>
+                        </ng-template>
+                      </ng-container>
                     </div>
                   </div>
                 </div>

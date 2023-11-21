@@ -42,32 +42,38 @@
               {
                 "itemTitle": "Les Paul",
                 "subMenuType": "guitarImage",
-                "guitarImage": "/assets/images/body-types/body-style-electric-les-paul.svg"
+                "guitarImage": "/assets/images/body-types/body-style-electric-les-paul.svg",
+                "itemLink": "https://www.gibson.com/Collection/les-paul"
               },
               {
                 "itemTitle": "SG",
                 "subMenuType": "guitarImage",
-                "guitarImage": "/assets/images/body-types/body-style-electric-SG.svg"
+                "guitarImage": "/assets/images/body-types/body-style-electric-SG.svg",
+                "itemLink": "https://www.gibson.com/Collection/sg"
               },
               {
                 "itemTitle": "ES",
                 "subMenuType": "guitarImage",
-                "guitarImage": "/assets/images/body-types/body-style-electric-ES.svg"
+                "guitarImage": "/assets/images/body-types/body-style-electric-ES.svg",
+                "itemLink": "https://www.gibson.com/Collection/es"
               },
               {
                 "itemTitle": "Explorer",
                 "subMenuType": "guitarImage",
-                "guitarImage": "/assets/images/body-types/body-style-electric-explorer.svg"
+                "guitarImage": "/assets/images/body-types/body-style-electric-explorer.svg",
+                "itemLink": "https://www.gibson.com/Collection/explorer"
               },
               {
                 "itemTitle": "Firebird",
                 "subMenuType": "guitarImage",
-                "guitarImage": "/assets/images/body-types/body-style-electric-firebird.svg"
+                "guitarImage": "/assets/images/body-types/body-style-electric-firebird.svg",
+                "itemLink": "https://www.gibson.com/Collection/firebird"
               },
               {
                 "itemTitle": "Flying V",
                 "subMenuType": "guitarImage",
-                "guitarImage": "/assets/images/body-types/body-style-electric-flying-v.svg"
+                "guitarImage": "/assets/images/body-types/body-style-electric-flying-v.svg",
+                "itemLink": "https://www.gibson.com/Collection/flying-v"
               },
               {
                 "itemTitle": "SHOP ALL",
@@ -86,7 +92,8 @@
                 "infoPanelConfig": {
                   "image": "/assets/images/collections/electric-collection-original.jpg",
                   "text": "Faithful tributes to another Golden Era. With this line of beloved classics, we bring back the instruments that have shaped sounds across generations and genres of music.",
-                  "title": "THE ORIGINAL COLLECTION"
+                  "title": "THE ORIGINAL COLLECTION",
+                  "link": "https://www.gibson.com/Collection/original"
                 }
               },
               {
@@ -95,7 +102,8 @@
                 "infoPanelConfig": {
                   "image": "/assets/images/collections/electric-collection-modern.jpg",
                   "text": "We never stop inventing. Building on a solid legacy through continuous innovation, we added lighter-weight bodies, asymmetrical SlimTaper necks, and other advanced features.",
-                  "title": "THE MODERN COLLECTION"
+                  "title": "THE MODERN COLLECTION",
+                  "link": "https://www.gibson.com/Collection/modern"
                 }
               },
               {
@@ -104,7 +112,8 @@
                 "infoPanelConfig": {
                   "image": "/assets/images/collections/electric-collection-artist.jpg",
                   "text": "Gibson USA has produced many signature models for the Artist Collection, including guitars created in collaboration with Slash, Dave Mustaine, Lzzy Hale, Kirk Douglas, and Tony Iommi.",
-                  "title": "THE ARTIST COLLECTION"
+                  "title": "THE ARTIST COLLECTION",
+                  "link": "https://www.gibson.com/Collection/artist"
                 }
               },
               {
@@ -113,7 +122,8 @@
                 "infoPanelConfig": {
                   "image": "/assets/images/collections/electric-collection-mod.jpg",
                   "text": "Rarities. Exclusives. Customized One-off and Pre-played Guitar MODs. Expand your Personal Collection with Unique Features, Builds and Colors that can only be found at Gibson.com",
-                  "title": "MOD™ COLLECTION"
+                  "title": "MOD™ COLLECTION",
+                  "link": "https://www.gibson.com/en-US/Collection/gibson-mod?filter=iso"
                 }
               }
             ]
@@ -128,10 +138,128 @@
                 "infoPanelConfig": {
                   "image": "/assets/images/collections/electric-collection-custom-shop-historic.jpg",
                   "text": "Our expert luthiers craft these special-edition, year-specific instruments to celebrate Gibson's legacy through artisty, authenticity, accuracy, and attention to period detail.",
-                  "title": "CUSTOM SHOP HISTORIC COLLECTION"
+                  "title": "CUSTOM SHOP HISTORIC COLLECTION",
+                  "link": "https://www.gibson.com/Collection/electric-custom-shop-historic"
+                }
+              },
+              {
+                "itemTitle": "Modern Collection",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/electric-collection-custom-shop-modern.jpg",
+                  "text": "Play something extraordinary. These instruments reflect a reverence for artistry and legacy, with the benefit of modern innovations. The pinnacle of craftsmanship, quality, and sound excellence.",
+                  "title": "CUSTOM SHOP MODERN COLLECTION",
+                  "link": "https://www.gibson.com/collection/electric-custom-shop-modern"
+                }
+              },
+              {
+                "itemTitle": "Artist Collection",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/electric-collection-custom-shop-artist.jpg",
+                  "text": "The Gibson Custom Shop has produced many signature models for the Artist Collection, including the Chuck Berry 1955 ES-350T, the Peter Frampton \"Phenix' inspired Les Paul Custom, and the Jerry Cantrell \"Wino\" Les Paul.",
+                  "title": "CUSTOM SHOP ARTIST COLLECTION",
+                  "link": "https://www.gibson.com/Collection/electric-custom-shop-artist"
+                }
+              },
+              {
+                "itemTitle": "Master Artisan Collection",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/electric-collection-custom-master-artisan.jpg",
+                  "text": "Gibson's new master artisan collection opens with these ten individual instruments by the iconoclastic luthier Leo Scala. Custom designed and built to be fully functional, authentically Gibson, and utterly one of a kind.",
+                  "title": "THE MASTER ARTISAN COLLECTION",
+                  "link": "https://www.gibson.com/Master-Artisan-Collection"
+                }
+              },
+              {
+                "itemTitle": "Murphy Lab",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/electric-collection-custom-shop-murphy-lab.jpg",
+                  "text": "Well-worn favorites, built brand new. We have developed specialized tools and technology to create expertly aged, handcrafted classics with the character, vibe, and feel of an original.",
+                  "title": "THE MURPHY LAB COLLECTION",
+                  "link": "https://www.gibson.com/Collection/the-gibson-murphy-lab"
+                }
+              },
+              {
+                "itemTitle": "Epiphone Inspired by Gibson Custom Shop",
+                "itemLink": "https://www.epiphone.com/en-US/page/Inspired-by-Custom-Shop"
+              }
+            ]
+          },
+          {
+            "itemTitle": "Exclusive Colors",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-exclusives.jpg",
+              "text": "Play different. Stand out. Our Exclusive Collection features unique builds and color options, only available direct from Gibson.",
+              "title": "GIBSON EXCLUSIVE ELECTRIC GUITARS",
+              "link": "https://www.gibson.com/Collection/electric-exclusives"
+            }
+          },
+          {
+            "itemTitle": "Certified Vintage",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-certified-vintage.jpg",
+              "text": "Our History-making Gibson Certified Vintage program offers collectors an incredible opportunity to own extraordinary instruments, sourced and authenticated as only Gibson can, and delivered with an array of exclusive extras.",
+              "title": "GIBSON CERTIFIED VINTAGE",
+              "link": "https://www.gibson.com/Certified-Vintage"
+            }
+          },
+          {
+            "itemTitle": "SHOP ALL ELECTRIC",
+            "itemLink": "https://www.gibson.com/Collection/electric",
+            "additionalClassNames": ["link-highlight"]
+          }
+        ],
+        "bonusItems": [
+          {
+            "itemTitle": "Electric Amps",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/electric-amps.jpg",
+              "text": "MESA/Boogie® amplifiers have shaped guitar tone, forever glorified in recording history, influencing guitar amplification technology from the day they were launched on the scene to this very day.",
+              "title": "MESA BOOGIE ELECTRIC AMPS",
+              "link": "https://www.mesaboogie.com/Collection/electric-amplifiers"
+            }
+          },
+          {
+            "itemTitle": "Effects Pedals",
+            "subMenuType": "subMenu",
+            "subMenuItems": [
+              {
+                "itemTitle": "Maestro Pedals",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/electric-pedals-maestro.jpg",
+                  "text": "Our brilliant gadgets empowered talented artists to shape the sounds of the last half century. We offer Maestro as well as MESA/Boogie® pedals and other tone shaping tools.",
+                  "title": "MAESTRO PEDALS",
+                  "link": "https://www.maestroelectronics.com/en-US/Collection/original-collection"
+                }
+              },
+              {
+                "itemTitle": "Mesa Boogie Pedals",
+                "subMenuType": "infoPanel",
+                "infoPanelConfig": {
+                  "image": "/assets/images/collections/mesa-boogie-effects-pedals.jpg",
+                  "text": "These brilliant gadgets have empowered talented artists to shape the sounds of the last half century. Meet the MESA/Boogie® line of effects pedals.",
+                  "title": "MESA BOOGIE PEDALS",
+                  "link": "https://www.mesaboogie.com/en-US/Collection/pedals"
                 }
               }
             ]
+          },
+          {
+            "itemTitle": "Epiphone Inspired by Gibson",
+            "subMenuType": "infoPanel",
+            "infoPanelConfig": {
+              "image": "/assets/images/collections/epiphone-gibson.jpg",
+              "text": "",
+              "title": "EPIPHONE INSPIRED BY GIBSON",
+              "link": "https://www.epiphone.com/en-US/Collection/epiphone-inspired-by-gibson"
+            }
           }
         ]
       }
