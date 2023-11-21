@@ -2,6 +2,18 @@
 
 ## [LIVE](https://gibson.abdulsadiq.com/) (Work in Progress)
 
+---
+
+## Latest Update
+
+I have completed the Header component, with the navigation bar complete with all the menus and submenus.
+
+I used [Angular Material Menu](https://material.angular.io/components/menu/overview) as a basis of the navigation menu system. It was tricky in terms of the menu's positioning, as well as each subsequent sub menu's relative positioning.
+
+I am also saving all the dummy data into json files, which I will then send out as an Observable from a service.
+
+---
+
 ## Description
 
 This WIP project is a frontend clone of the [official Gibson USA website](https://www.gibson.com/en-US).
