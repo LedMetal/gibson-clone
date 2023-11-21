@@ -8,7 +8,7 @@
 
 I have completed the Header component, with the navigation bar complete with all the menus and submenus.
 
-I used [Angular Material Menu](https://material.angular.io/components/menu/overview) as a basis of the navigation menu system. It was tricky in terms of the menu's positioning, as well as each subsequent sub menu's relative positioning.
+I used <a href="https://material.angular.io/components/menu/overview" target="_blank">Angular Material Menu</a> as a basis of the navigation menu system. It was tricky in terms of the menu's positioning, as well as each subsequent sub menu's relative positioning.
 
 I am also saving all the dummy data into json files, which I will then send out as an Observable from a service.
 
@@ -16,7 +16,7 @@ I am also saving all the dummy data into json files, which I will then send out 
 
 ## Description
 
-This WIP project is a frontend clone of the [official Gibson USA website](https://www.gibson.com/en-US).
+This WIP project is a frontend clone of the <a href="https://www.gibson.com/en-US" target="_blank">official Gibson USA website</a>.
 
 Please remember this is a work in progress. I will keep the live site updated with the latest changes in this repository. I'll slowly construct this clone bit by bit, as long as the beauitful guitars don't distract me too much!
 
@@ -38,4 +38,4 @@ _Programming Language:_ **Angular**, **Typescript**, **SCSS**
 
 ## Author
 
-[Abdul Sadiq](https://github.com/LedMetal)
+<a href="https://github.com/LedMetal" target="_blank">Abdul Sadiq</a>
