@@ -1,0 +1,101 @@
+@import "../../../shared/colors.scss";
+
+.footer {
+  font-family: "RobotoCondensed";
+
+  .socials-section {
+    align-items: center;
+    background-color: $footer-background-1;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    .socials-section-content {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 72.5rem;
+
+      .sign-up-section {
+        display: flex;
+        flex-direction: column;
+        height: 16.875rem;
+        justify-content: center;
+        width: 50%;
+
+        .sign-up-title {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1.4375rem;
+        }
+
+        .sign-up-btn {
+          align-items: center;
+          background-color: $btn-background-1;
+          color: $footer-signup-btn;
+          font-size: 0.875rem;
+          font-weight: 700;
+          display: flex;
+          gap: 0.25rem;
+          justify-content: center;
+          padding: 0.625rem 0;
+          text-decoration: none;
+          width: 22.25rem;
+        }
+
+        .disclaimer-text {
+          font-size: 0.725rem;
+
+          .disclaimer-link {
+            color: $footer-subscribe-disclaimer;
+          }
+        }
+      }
+
+      .social-follow-section {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+
+        .social-follow-section-content {
+          display: flex;
+          flex-direction: column;
+          gap: 1.375rem;
+          width: fit-content;
+
+          .section-title {
+            font-size: 1rem;
+            font-weight: 700;
+          }
+
+          .social-links {
+            display: flex;
+            gap: 1rem;
+
+            .social-link {
+              align-items: center;
+              background-color: $footer-social-icon-background;
+              cursor: pointer;
+              display: flex;
+              height: 2.6875rem;
+              justify-content: center;
+              width: 2.6875rem;
+
+              fa-icon {
+                color: $footer-social-icon;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-footer-section {
+    background-color: $footer-background-2;
+  }
+
+  .gibson-brands-section {
+    background-color: $footer-background-3;
+  }
+}
