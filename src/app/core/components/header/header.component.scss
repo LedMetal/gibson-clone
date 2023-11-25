@@ -27,8 +27,8 @@
     background-color: transparent !important;
 
     &.sub-menu-trigger {
-      background-color: $shadow !important;
-      color: $white !important;
+      background-color: $nav-sub-menu-trigger-background !important;
+      color: $nav-sub-menu-trigger-text !important;
     }
   }
 
@@ -36,7 +36,7 @@
     width: 117.17px;
 
     .menu-option {
-      background-color: $black;
+      background-color: $language-dropdown-background;
       height: 24px;
       min-height: 0;
       padding: 0;
@@ -44,7 +44,7 @@
       &:hover {
         .menu-option-content {
           .language-title {
-            color: $black;
+            color: $language-dropdown-text-hover;
           }
         }
       }
@@ -60,7 +60,7 @@
         }
 
         .language-title {
-          color: $white;
+          color: $language-dropdown-text;
           font-family: "RobotoCondensed";
           font-size: 11.6px;
           letter-spacing: normal;
@@ -167,7 +167,7 @@
 
         .menu-item-link {
           &:hover {
-            color: $shadow;
+            color: $nav-menu-item-text-hover;
             text-decoration: underline;
           }
         }
@@ -175,15 +175,15 @@
         .menu-item-btn {
           &.sub-menu-trigger {
             &:hover {
-              background-color: $shadow !important;
-              color: $white;
+              background-color: $nav-sub-menu-trigger-background !important;
+              color: $nav-sub-menu-trigger-text;
             }
           }
 
           &:not(.sub-menu-trigger) {
             &:hover {
               background-color: transparent;
-              color: $shadow;
+              color: $nav-menu-item-text-hover;
               text-decoration: underline;
             }
           }
@@ -267,14 +267,14 @@
 
       .sub-menu-item-link {
         &:hover {
-          color: $shadow;
+          color: $nav-sub-menu-trigger-hover;
           text-decoration: underline;
         }
       }
 
       .sub-menu-item-btn {
         &:hover {
-          color: $shadow;
+          color: $nav-sub-menu-trigger-hover;
           text-decoration: underline;
         }
       }
@@ -285,7 +285,7 @@
 .header {
   .top-bar {
     align-items: center;
-    background-color: $black;
+    background-color: $header-topbar-background;
     display: flex;
     height: 40px;
     justify-content: center;
@@ -300,11 +300,11 @@
         display: flex;
 
         .link-container {
-          border-right: 1px solid $paynesGray;
+          border-right: 1px solid $header-topbar-divider;
           padding: 0 10px;
 
           .link {
-            color: $white;
+            color: $header-topbar-link;
             font-family: "RobotoCondensed";
             font-size: 11.6px;
             text-decoration: none;
@@ -318,7 +318,7 @@
 
           .language-select-btn-content {
             align-items: center;
-            color: $white;
+            color: $language-dropdown-text;
             display: flex;
             font-family: "RobotoCondensed";
             font-size: 11.6px;
@@ -333,7 +333,7 @@
 
   .nav-bar {
     align-items: center;
-    background-color: $nero;
+    background-color: $nav-bar-background;
     display: flex;
     height: 85px;
     justify-content: center;
@@ -350,7 +350,7 @@
 
         .home-link-container {
           .home-link {
-            box-shadow: 0 0 10px 0 $nero;
+            box-shadow: 0 0 10px 0 $nav-home-logo-box-shadow;
             display: flex;
           }
         }
@@ -362,7 +362,7 @@
 
           .nav-link {
             .nav-link-trigger {
-              color: $white;
+              color: $nav-menu-item-text;
               font-family: "RobotoCondensed";
               font-size: 16px;
               font-weight: bold;
@@ -379,7 +379,7 @@
       .right-section {
         .cart-container {
           .cart-link {
-            color: $white;
+            color: $nav-cart-icon;
 
             .cart-icon {
               height: 24px;
