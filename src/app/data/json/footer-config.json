@@ -1,0 +1,159 @@
+[
+  {
+    "listTitle": "SHOP",
+    "listLinks": [
+      {
+        "text": "Les Paul Models",
+        "link": "https://www.gibson.com/Guitars/Les-Paul"
+      },
+      {
+        "text": "SG Models",
+        "link": "https://www.gibson.com/Guitars/SG"
+      },
+      {
+        "text": "ES Models",
+        "link": "https://www.gibson.com/Guitars/ES"
+      },
+      {
+        "text": "Basses",
+        "link": "https://www.gibson.com/Guitars/Bass"
+      },
+      {
+        "text": "Designer Models",
+        "link": "https://www.gibson.com/Guitars/Designer"
+      },
+      {
+        "text": "Gibson Custom Shop",
+        "link": "https://www.gibson.com/Custom-Shop"
+      },
+      {
+        "text": "Super Jumbo Models",
+        "link": "https://www.gibson.com/Guitars/Super-Jumbo"
+      },
+      {
+        "text": "Square Shoulder Models",
+        "link": "https://www.gibson.com/Guitars/Square-Shoulder"
+      },
+      {
+        "text": "Round Shoulder",
+        "link": "https://www.gibson.com/Guitars/Round-Shoulder"
+      },
+      {
+        "text": "Small Body Models",
+        "link": "https://www.gibson.com/Guitars/Small-Body"
+      },
+      {
+        "text": "Songwriter Models",
+        "link": "https://www.gibson.com/Guitars/Songwriter"
+      },
+      {
+        "text": "Accessories",
+        "link": "https://www.gibson.com/Gear/Accessories"
+      },
+      {
+        "text": "Hardware",
+        "link": "https://www.gibson.com/Gear/Hardware"
+      },
+      {
+        "text": "Merchandise",
+        "link": "https://www.gibson.com/Gear/Lifestyle"
+      }
+    ],
+    "bonusLinks": [
+      {
+        "text": "The Gibson Gerage",
+        "link": "https://www.gibson.com/Garage"
+      },
+      {
+        "text": "Find a Dealer Near You",
+        "link": "https://www.gibson.com/Find-A-Store"
+      },
+      {
+        "text": "Online Dealers",
+        "link": "https://www.gibson.com/Online-Dealers"
+      }
+    ]
+  },
+  {
+    "listTitle": "SUPPORT",
+    "listLinks": [
+      {
+        "text": "Customer Service",
+        "link": "https://www.gibson.com/Support/Customer-Service"
+      },
+      {
+        "text": "Virtual Guitar Tech",
+        "link": "https://www.gibson.com/Support/Virtual-Guitar-Tech"
+      },
+      {
+        "text": "Warranty & Registration Info",
+        "link": "https://www.gibson.com/page/warranty-registration"
+      },
+      {
+        "text": "Repair and Restoration",
+        "link": "https://www.gibson.com/Support/Virtual-Repair-And-Restoration"
+      },
+      {
+        "text": "Report Fakes and Scams",
+        "link": "https://forms.monday.com/forms/41eba6904d716fc521b809bbc64d5816?r=use1"
+      },
+      {
+        "text": "Serial Number FAQ",
+        "link": "https://www.gibson.com/Support/Serial-Number-Search"
+      },
+      {
+        "text": "Online Store Policies & FAQ",
+        "link": "https://www.gibson.com/Policy/StorePolicy"
+      },
+      {
+        "text": "Promotional Terms and Conditions",
+        "link": "https://www.gibson.com/page/promotional-terms-and-conditions"
+      },
+      {
+        "text": "Gibson Garage Store Policies",
+        "link": "https://www.gibson.com/en-US/Policy/Garage"
+      },
+      {
+        "text": "Gibson Guitar Specs (2015-2019)",
+        "link": "http://legacy.gibson.com/"
+      }
+    ]
+  },
+  {
+    "listTitle": "OUR COMPANY",
+    "listLinks": [
+      {
+        "text": "Leadership",
+        "link": "https://www.gibson.com/About-Us"
+      },
+      {
+        "text": "Careers",
+        "link": "https://www.gibson.com/Careers"
+      },
+      {
+        "text": "Contact Us",
+        "link": "https://www.gibson.com/Support/Contact"
+      },
+      {
+        "text": "News",
+        "link": "https://www.gibson.com/News"
+      },
+      {
+        "text": "Gibson TV",
+        "link": "https://www.gibson.com/GibsonTV"
+      },
+      {
+        "text": "Gibson Gives",
+        "link": "https://www.gibsonfoundation.org/"
+      },
+      {
+        "text": "Gibson Generation Group",
+        "link": "http://g3.gibson.com/"
+      },
+      {
+        "text": "Gibson Brands Blog",
+        "link": "https://www.gibson.com/Blog"
+      }
+    ]
+  }
+]
