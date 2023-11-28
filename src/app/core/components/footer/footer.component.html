@@ -73,7 +73,114 @@
     </div>
   </div>
 
-  <div class="main-footer-section"></div>
+  <div class="main-footer-section">
+    <div class="main-footer-content">
+      @for (list of footerConfig; track $index) {
+      <div class="main-footer-list">
+        <div class="list-title">{{ list.listTitle }}</div>
 
-  <div class="gibson-brands-section"></div>
+        <div class="links-container">
+          @for (link of list.listLinks; track $index) {
+          <a class="list-link" [href]="link.link" target="_blank">{{
+            link.text
+          }}</a>
+          }
+        </div>
+
+        <div class="bonus-links-container" *ngIf="list.bonusLinks">
+          @for (link of list.bonusLinks; track $index) {
+          <a class="list-link" [href]="link.link" target="_blank">{{
+            link.text
+          }}</a>
+          }
+        </div>
+      </div>
+      }
+
+      <div class="main-footer-list">
+        <div class="list-title">LEARN</div>
+
+        <div class="links-container">
+          <a class="store-btn" href="https://app.adjust.com/fvo6clt">
+            <img src="/assets/images/logos/google-play-badge.png" />
+          </a>
+
+          <a class="store-btn" href="https://app.adjust.com/fvo6clt">
+            <img src="/assets/images/logos/app-store-badge.png" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="customer-support-line">
+      Customer Support (US & Canada):
+      <a href="tel://1-800-4GIBSON">1-800-4GIBSON</a>
+    </div>
+  </div>
+
+  <div class="gibson-brands-section">
+    <div class="section-title">VISIT THE GIBSON BRANDS FAMILY</div>
+
+    <div class="brands-list">
+      <a class="gibson-family-brand" href="http://gibson.com/" target="_blank"
+        ><img src="/assets/images/logos/logo-gibson-white.svg"
+      /></a>
+      <a class="gibson-family-brand" href="http://epiphone.com/" target="_blank"
+        ><img src="/assets/images/logos/logo-epiphone-white.svg"
+      /></a>
+      <a
+        class="gibson-family-brand"
+        href="http://kramerguitars.com/"
+        target="_blank"
+        ><img src="/assets/images/logos/logo-kramer-white.svg"
+      /></a>
+      <a
+        class="gibson-family-brand"
+        href="http://steinberger.com/"
+        target="_blank"
+        ><img src="/assets/images/logos/logo-steinberger-white.svg"
+      /></a>
+      <a class="gibson-family-brand" href="http://krksys.com/" target="_blank"
+        ><img src="/assets/images/logos/logo-krk-white.svg"
+      /></a>
+      <a
+        class="gibson-family-brand"
+        href="http://mesaboogie.com/"
+        target="_blank"
+        ><img src="/assets/images/logos/logo-mesa-boogie-white.png"
+      /></a>
+      <a
+        class="gibson-family-brand"
+        href="https://www.maestroeffects.com/"
+        target="_blank"
+        ><img src="/assets/images/logos/logo-maestro-white.png"
+      /></a>
+      <a
+        class="gibson-family-brand"
+        href="https://www.gibson.com/en-US/lifton"
+        target="_blank"
+        ><img src="/assets/images/logos/logo_difton-white.png"
+      /></a>
+    </div>
+
+    <div class="section-footer">
+      <div class="left-section">
+        Copyright 2023 Gibson Brands, Inc. All rights reserved.
+      </div>
+
+      <div class="right-section">
+        <a class="link" href="https://www.gibson.com/Privacy-Policy"
+          >Privacy Policy</a
+        >
+        <a class="link" href="https://www.gibson.com/Policy/Terms"
+          >Terms & Conditions</a
+        >
+        <a
+          class="link"
+          href="https://www.gibson.com/Trademarks-of-Gibson-Brands-Inc"
+          >TradeMarks of Gibson Brands, Inc.</a
+        >
+      </div>
+    </div>
+  </div>
 </div>

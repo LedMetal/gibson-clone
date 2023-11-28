@@ -10,10 +10,10 @@ import {
 import { RouterModule } from '@angular/router';
 import { TLanguageOption } from '../../../shared/types/language-option';
 import { TNavConfig } from '../../../shared/types/nav-config';
-import { NavbarServiceService } from '../../../data/services/navbar-service.service';
 import { OnInit } from '@angular/core';
-import { LanguageServiceService } from '../../../data/services/language-service.service';
 import { SubMenuType } from '../../../shared/enums/sub-menu-type';
+import { NavbarConfigService } from '../../../data/services/navbar-config.service';
+import { LanguageConfigService } from '../../../data/services/language-config.service';
 
 @Component({
   selector: 'app-header',
@@ -40,8 +40,8 @@ export class HeaderComponent implements OnInit {
   navConfig: TNavConfig[] = [];
 
   constructor(
-    private languageService: LanguageServiceService,
-    private navbarService: NavbarServiceService
+    private languageService: LanguageConfigService,
+    private navbarService: NavbarConfigService
   ) {}
 
   ngOnInit(): void {

@@ -93,9 +93,114 @@
 
   .main-footer-section {
     background-color: $footer-background-2;
+    color: $footer-list-link;
+
+    .main-footer-content {
+      display: flex;
+      justify-content: space-evenly;
+      margin: auto;
+      padding-top: 3.75rem;
+      width: 80rem;
+
+      .main-footer-list {
+        border-top: 3px solid $footer-list-border;
+        padding-top: 1.25rem;
+        width: 10rem;
+
+        .links-container,
+        .bonus-links-container {
+          display: flex;
+          flex-direction: column;
+          gap: 0.625rem;
+          margin-top: 1.25rem;
+
+          .list-link {
+            color: $footer-list-link;
+            font-size: 0.75rem;
+            text-decoration: none;
+          }
+
+          .store-btn {
+            width: 9.0625rem;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .bonus-links-container {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+
+    .customer-support-line {
+      border-bottom: 1px solid $footer-border;
+      font-size: 0.75rem;
+      font-weight: 400;
+      margin: 2.75rem auto 0;
+      padding-bottom: 3.5rem;
+      text-align: center;
+      width: 1280px;
+
+      a {
+        color: inherit;
+      }
+    }
   }
 
   .gibson-brands-section {
     background-color: $footer-background-3;
+    color: $footer-list-link;
+    padding-bottom: 1.25rem;
+
+    .section-title {
+      font-size: 0.875rem;
+      font-weight: 700;
+      padding-top: 3.125rem;
+      text-align: center;
+    }
+
+    .brands-list {
+      align-items: center;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 2.5rem auto 0;
+      width: 80rem;
+
+      .gibson-family-brand {
+        img {
+          max-height: 3.75rem;
+        }
+      }
+    }
+
+    .section-footer {
+      align-items: center;
+      display: flex;
+      font-size: 0.625rem;
+      justify-content: space-between;
+      margin: 30px auto 0;
+      width: 80rem;
+
+      .right-section {
+        display: flex;
+
+        .link {
+          color: $footer-list-link;
+          text-decoration: none;
+
+          &:not(:first-child) {
+            padding-left: 0.3125rem;
+          }
+
+          &:not(:last-child) {
+            border-right: 1px solid $footer-border;
+            padding-right: 0.3125rem;
+          }
+        }
+      }
+    }
   }
 }
