@@ -107,18 +107,30 @@
 
     &.lifestyle-menu {
       height: 270px;
-      right: 680px;
+      right: 679px;
       width: 775px;
+
+      @media (max-width: 1629px) {
+        right: 1px;
+      }
     }
 
     &.service-menu {
       right: 793px;
       width: 870px;
+
+      @media (max-width: 2045px) {
+        right: 3px;
+      }
     }
 
     &.media-menu {
       right: 889px;
       width: 950px;
+
+      @media (max-width: 2398px) {
+        right: 4px;
+      }
     }
 
     & > div {
