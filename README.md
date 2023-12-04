@@ -6,9 +6,9 @@
 
 ## Latest Update
 
-I have completed the Footer component, which is really a three-part footer; a signup section, the main footer links, and the Gibson brands section.
+I have started working on the Home page component. This is based on how the Home page looks like on and around Dec 1st, 2023 ... though the idea is all that really matters.
 
-This was pretty straightforward with the help of flex grid CSS. Now, we finally get to start on the main pages of the site!
+Once I complete the Home page, I will shift focus on making the page as responsive as possible with the existing components (Header, Footer, Home).
 
 ---
 
